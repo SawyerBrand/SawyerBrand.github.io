@@ -1,0 +1,94 @@
+Lesson 1:
+a sawyer brand tragedy in 4 parts
+
+Python is a very simple and straightforward language with very little if any boilerplate - meaning premade - code. The best way to do python - even for intermediates - is jupyter notebook. This is because you can have "markdown cells" that allow you to make notes to explain your work instead of just comments. But before we even open up Jupyter notebook, let's talk about command lines. A command line is an interface which allows you to communicate directly with your operating system. It's the bees knees. Through simple commands (like just typing jupyter notebook - it will open jupyter notebook) you can do so many things once you get good at it. Below are a few easy and simple starting commands:
+
+cd = open the folder that comes after
+
+example: cd Documents
+
+cat = lists the contents of files to the terminal window.
+
+example: cat Documents 
+Anyway, from your terminal thingy you can get to the jupyter notebooks by typing " cd Downloads/Fake_Lessons" and then after you hit enter type in "jupyter notebook" and hit enter. These commands will get you into the Fake Lessons folder and then open up jupyter notebook.
+
+The path of a file is the unique location of the file. If you save an image in a folder called Images under the Documents folder in your computer, the path will be user/Documents/Images/image_ex.png
+
+Let's talk variables!
+A variable stores numbers and there are different types of variables:
+
+integer (a number without a decimal),
+floating point (a number with a decimal),
+string (numbers and/or letters enclosed in quotation marks),
+complex numbers,
+booleans (True or False, 1 or 0).
+# Remember that Python ignores everything on a line after  a pound sign (#)
+# this is how you write "comments"
+number=1 # an integer
+Number=1.0 # a floating point - notice the decimal point
+NUMBER='1' # a string - notice the quotation marks
+ANOTHERNUMBER="1" # double quotes are also ok
+comp=1j # a complex number with imaginary part 1 
+#(don't ask why "j" and not "i") 
+morecomplex=3+1j # the complex number 3+1i 
+bools=True # A boolean variable (True/False or 1/0)
+Above is a block of code outlining a crucial step in coding - you have to define a variable before you use it (there are ways around this but most of the time you use variables it's to store info easily so you'd define it first).
+
+Here are some pointers about variable names:
+
+1) Variable names are composed of alphanumeric characters, including '-' and '_'.
+
+2) They are case sensitive: 'a' is not the same as 'A'.
+
+3) There are some reserved words in Python that have preset meanings, so using them as variables is a bad idea:
+
+and	assert	break	class	continue
+def	del	elif	else	except
+exec	finally	for	from	global
+if	import	in	is	lambda
+not	or	pass	print	raise
+return	try	while
+And here are some more words that aren't reserved but clash with very basic python functions:
+
+Data	Float	Int	Numeric
+array	close	float	int	input
+open	range	type	write	zeros
+You should also avoid all the names defined in commonly used libraries like:
+
+acos	asin	atan	cos
+e	exp	log	log10	sin
+sqrt	tan	cos	*
+I am guilty of setting pi = np.pi, which is a function that gives the entirety of pi's values. For me, it's easier to type pi than np.pi but it is bad practice so do as I say not as I do
+
+The best practice in variable naming is to use longer, more descriptive words. Again, I don't do this. I am a bad coder. Some good naming conventions are
+
+to use '_' or '-' in the middle of things. Example: ctd_sal or merid_vel
+to use lowercase for data
+to use UPPERCASE for set constants
+Be careful with special names that use leading or trailing underscores. these are treated differently by Python and you have to know what you are doing before you use them.
+Operations:
+operation symbol	function
++	adds
+-	subtracts
+*	multiplies
+/	divides
+%	gives the remainder (this is called modulo).
+**	raises to the power
++=	increments
+-=	decrements
+==	tests equality
+!=	tests inequality
+use lots of paranthesis. More than you need. it helps organize operations.
+
+Let's use some basic operators to figure out how python works.
+
+num = 1
+nummy = 2
+num_3 = 3
+
+num + num_3
+num + nummy
+3
+If I don't assign it to a variable, the last line I code will be printed out. And the line before it is essentially lost, because I didn't assign it to variable or do anything with it, and it is overwritten by the second line of code.
+
+ 
