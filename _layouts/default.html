@@ -1,40 +1,77 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css"> 
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-			<li><a href="/Home"  fontsize=85></a></li>
-			<li><a href="/Research" fontsize=85 >Research</a></li>
-	        	<li><a href="/CV"  fontsize=85>CV</a></li>
-			<li><a href="/Python"  fontsize=85>OAS</a></li>
-			<li><a href="/SOCCOM"  fontsize=85>SOCCOM Work</a></li>
-			<a href="https://www.lanl.gov/">
- 			   <img src="images/lanl_logo.png" style="float: right; width: 140px; height: 65px; margin-left: 10px;">
-			</a>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+  <style>
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
-			<a href="https://www.hilat.org/">
-  			  <img src="images/hilat-rasm-logo.png" style="float: right; width: 100px; height: 70px;">
-			</a>
-			<br>
-	    		</ul>
-			</nav>
-			</div><!-- /.container -->
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="sbrand@lanl.gov">sbrand@lanl.gov</a></li>
-				<li><a href="sawyervsbrand@gmail.com">sawyervsbrand@gmail.com</a></li>
-	        		<li><a href="https://github.com/sawyerbrand">github.com/sawyerbrand</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+    nav li a {
+      font-size: 18px; /* Adjust as needed */
+      text-decoration: none;
+    }
+
+    .logo-bar {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .logo-bar img {
+      height: 65px;
+      width: auto;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo bar, outside nav list -->
+  <div class="logo-bar">
+    <a href="https://www.lanl.gov/">
+      <img src="images/lanl_logo.png" alt="LANL Logo">
+    </a>
+    <a href="https://www.hilat.org/">
+      <img src="images/hilat-rasm-logo.png" alt="HiLat Logo">
+    </a>
+  </div>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="/Home">Home</a></li>
+      <li><a href="/Research">Research</a></li>
+      <li><a href="/CV">CV</a></li>
+      <li><a href="/Python">OAS</a></li>
+      <li><a href="/SOCCOM">SOCCOM Work</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="mailto:sbrand@lanl.gov">sbrand@lanl.gov</a></li>
+      <li><a href="mailto:sawyervsbrand@gmail.com">sawyervsbrand@gmail.com</a></li>
+      <li><a href="https://github.com/sawyerbrand">github.com/sawyerbrand</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
+
